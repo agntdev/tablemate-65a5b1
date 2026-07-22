@@ -3,17 +3,12 @@
     "name": "Today's Capacity",
     "steps": [
       {
+        "send": { "callback": "owner:view_capacity" },
         "expect": [
           {
-            "method": "sendMessage",
-            "payload": {
-              "text": "Shows today's remaining capacity to the owner"
-            }
+            "method": "editMessageText"
           }
-        ],
-        "send": {
-          "callback": "owner:view_capacity"
-        }
+        ]
       }
     ]
   }

@@ -3,17 +3,15 @@
     "name": "/owner",
     "steps": [
       {
+        "send": { "text": "/owner" },
         "expect": [
           {
             "method": "sendMessage",
             "payload": {
-              "text": "Opens owner/staff interface for managing bookings and settings"
+              "text": "Owner menu — what would you like to do?"
             }
           }
-        ],
-        "send": {
-          "text": "/owner"
-        }
+        ]
       }
     ]
   }
