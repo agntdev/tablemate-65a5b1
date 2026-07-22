@@ -3,17 +3,15 @@
     "name": "View Upcoming Bookings",
     "steps": [
       {
+        "send": { "callback": "owner:view_bookings" },
         "expect": [
           {
-            "method": "sendMessage",
+            "method": "editMessageText",
             "payload": {
-              "text": "Displays all upcoming bookings to the owner"
+              "text": "No upcoming bookings yet."
             }
           }
-        ],
-        "send": {
-          "callback": "owner:view_bookings"
-        }
+        ]
       }
     ]
   }
