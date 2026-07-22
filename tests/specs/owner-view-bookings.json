@@ -1,0 +1,20 @@
+[
+  {
+    "name": "View Upcoming Bookings",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Displays all upcoming bookings to the owner"
+            }
+          }
+        ],
+        "send": {
+          "callback": "owner:view_bookings"
+        }
+      }
+    ]
+  }
+]
