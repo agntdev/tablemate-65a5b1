@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Today's Capacity",
+    "steps": [
+      {
+        "expect": [
+          {
+            "method": "sendMessage",
+            "payload": {
+              "text": "Shows today's remaining capacity to the owner"
+            }
+          }
+        ],
+        "send": {
+          "callback": "owner:view_capacity"
+        }
+      }
+    ]
+  }
+]
